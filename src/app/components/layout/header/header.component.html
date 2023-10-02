@@ -1,0 +1,16 @@
+<header>
+    <nav>
+        <a routerLink="home">Inicio</a>
+        <a routerLink="movies">Peliculas</a>
+    </nav>
+</header>
+
+<div class="movie-cards">
+    <div *ngFor="let movie of movies" class="movie-card">
+      <img [src]="movie.imageUrl" alt="{{ movie.title }}">
+      <h3>{{ movie.title }}</h3>
+      <p>{{ movie.description }}</p>
+    </div>
+  </div>
+  
+  
